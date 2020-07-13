@@ -19,3 +19,5 @@ const MenuItem = ({title, imageUrl, size, history, match,linkUrl}) => (
 )
 
 export default withRouter(MenuItem)
+
+
