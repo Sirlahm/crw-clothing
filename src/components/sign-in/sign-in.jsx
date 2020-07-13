@@ -26,9 +26,10 @@ class SignIn extends React.Component{
              await auth.signInWithEmailAndPassword(email,password)
              this.setState({email:'', password:''})
          } catch (error) {
+             alert('Email and Password not Match! .. Try Again')
              console.log(error)
          }
-        this.setState({email: '',password:''})
+        this.setState({email: '',password:''})  //check
     }
 
     handleChange = event => {
